@@ -1,0 +1,3 @@
+# React Firebase onAuthStateChanged Memory Leak
+
+This repository demonstrates a common issue encountered when using Firebase's `onAuthStateChanged` listener within React components.  The problem stems from the listener not being properly detached during component unmounting, which can lead to memory leaks. The `bug.js` file showcases the problematic code, while `bugSolution.js` provides a corrected version using useEffect hook for better lifecycle management.
